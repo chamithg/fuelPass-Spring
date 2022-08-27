@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+
+body {
+ 	background-color: #103269;
+ 	animation-name: FadeIn;
+  	animation-duration: 1s;
+  	transition-timing-function: linear;
+}
+
+.card{	
+	background-color: #e4e9f0;
+	border-radius:1rem;
+	animation-name: FadeIn;
+  	animation-duration: 1s;
+  	transition-timing-function: linear;
+
+}
+@keyframes FadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes FadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes FadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes FadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes FadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
