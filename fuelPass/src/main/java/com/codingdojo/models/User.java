@@ -32,11 +32,11 @@ public class User {
 	// only empty construct if using model
 	
 	
-	@NotEmpty(message="you must provide a name ")
+	@NotNull(message="you must provide a name ")
 	@Size(min = 2, message="The name must have at least 2 characters")
 	private String name;
 	
-	@NotEmpty(message="you must provide your driver's licens No ")
+	@NotNull(message="you must provide your driver's licens No ")
 	@Size(min = 8,max =8, message="Drivers licens No  must be 8 characters long")
 	private String dlno;
 	
@@ -47,7 +47,7 @@ public class User {
 	private String email;
 	
 	
-	
+	@NotNull
 	@NotEmpty(message="you must provide a password ")
 	@Size(min=8, message="Confirm Password must be between 8 and 128 characters")
 	private String password;
