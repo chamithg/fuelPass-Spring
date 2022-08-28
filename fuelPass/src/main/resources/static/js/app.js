@@ -63,28 +63,6 @@ const ctx1 = document.getElementById('myChart1');
 	
 }
 
-function calcQuota(){
 
-	let prevOdo = document.getElementById('prevOdo').value;
-	let prevDate = document.getElementById('prevDate').value;
-	let fuelEco = document.getElementById('fuelEco').value;
-	let currOdo = document.getElementById('currOdo').value;
-	let today = new Date();
-	
-	
  
-	let dailyAvg = (currOdo-prevOdo)/dayCount;
-	let weeklyReq = Math.ceil((dailyAvg*7)/fuelEco);
-	
-	
-	document.getElementById('newQuota').innerHTML = prevDate;
-
-}
-
-  function generateBarCode()
-            {
-                var nric = $('#text').val();
-                var url = 'https://api.qrserver.com/v1/create-qr-code/?data=' + nric + '&amp;size=50x50';
-                $('#barcode').attr('src', url);
-            }
 

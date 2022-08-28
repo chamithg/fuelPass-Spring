@@ -33,32 +33,32 @@
     <p>
         <label >Document Type</label>
         <br>
-        <input  name="type"  class="form-control"/>
+        <input  name="type" required="true"  class="form-control"/>
     </p>
      <p>
         <label >Document Date:</label>
         <br>
-        <input  type="date" name="date" class="form-control"/>
+        <input  type="date" name="date" required="true" class="form-control"/>
     </p>
      <p>
         <label >mileage mentioned in document:</label>
         <br>
-        <input  type="number" name="odo" class="form-control"/>
+        <input  type="number" name="odo" required="true" class="form-control"/>
     </p>
      <p>
         <label >current date:</label>
         <br>
-        <input  type="date" name="today" class="form-control"/>
+        <input  type="date" name="today" required="true" class="form-control"/>
     </p>
      <p>
         <label >current Mileage:</label>
         <br>
-        <input  type="number" name="curr" class="form-control"/>
+        <input  type="number" name="curr" required="true" class="form-control"/>
     </p>
      <p>
         <label  >Vehicle's fuel economy(mpg):</label>
         <br>
-        <input  type="number" name="eco" class="form-control"/>
+        <input  type="number" name="eco" required="true" class="form-control"/>
       
     </p>
     <input type="submit" value="Calculate"/>

@@ -139,12 +139,17 @@ public class VehicleController {
 			@RequestParam(value ="odo") long odo,
 			@RequestParam(value ="curr") long curr,
 			@RequestParam(value ="eco") long eco,
-			@PathVariable("id") Long id,
+			@PathVariable("id") long id,
 			Model model, RedirectAttributes redirectAttributes) throws ParseException {
+
+		
+
 		
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd", Locale.ENGLISH);
 		Date prevDate = sdf.parse(date);
 		Date currDate = sdf.parse(today);
+		
+		
 		
 		long driven = curr - odo;
 		long numDays = (currDate.getTime()- prevDate.getTime())/ (24 * 60 * 60 * 1000);
